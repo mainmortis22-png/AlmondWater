@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Almond Water | Agua de Almendras</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f7f2ea;color:#4d3723;}
+header{background:white;box-shadow:0 5px 20px rgba(0,0,0,.08);padding:20px 8%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;}
+.logo{font-size:30px;font-weight:700;color:#7a542d;}
+nav a{text-decoration:none;margin-left:30px;color:#5a432d;font-weight:500;}
+.hero{display:flex;justify-content:center;align-items:center;gap:70px;padding:70px 8%;flex-wrap:wrap;}
+.hero img{width:320px;border-radius:25px;box-shadow:0 20px 40px rgba(0,0,0,.15);}
+.info{max-width:500px;}
+.info h1{font-size:55px;margin-bottom:15px;}
+.info p{font-size:18px;line-height:1.7;margin-bottom:25px;color:#6c5946;}
+.price{font-size:45px;font-weight:bold;color:#8a5a2f;margin-bottom:25px;}
+.buy{background:#8a5a2f;color:white;border:none;padding:18px 45px;font-size:18px;border-radius:15px;cursor:pointer;}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px;padding:40px 8%;}
+.feature,.form-card{background:white;padding:25px;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,.08);}
+.form-section{display:none;padding:60px 8%;}
+.form-card{max-width:650px;margin:auto;}
+input{width:100%;padding:15px;margin:10px 0;border:2px solid #ddd;border-radius:12px;}
+#pay{width:100%;padding:18px;border:none;border-radius:12px;background:#bdbdbd;color:white;cursor:not-allowed;}
+.notice{text-align:center;margin-top:20px;color:#888;}
+footer{margin-top:60px;padding:30px;text-align:center;background:white;color:#777;}
+</style></head><body>
+<header><div class="logo">🥛 Almond Water</div><nav><a href="#">Inicio</a><a href="#">Producto</a><a href="#">Contacto</a></nav></header>
+<section class="hero">
+<img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=500" alt="Botella">
+<div class="info"><h1>Almond Water</h1><p>Disfruta una bebida refrescante inspirada en el sabor natural de la almendra. Esta es una página de demostración con un diseño moderno.</p><div class="price">$999 CLP</div><button class="buy" onclick="mostrarFormulario()">Ordenar Ahora</button></div>
+</section>
+<section class="features"><div class="feature"><h3>🌰 Ingredientes Naturales</h3><p>Inspirado en almendras seleccionadas.</p></div><div class="feature"><h3>❄️ Siempre Fresca</h3><p>Ideal para cualquier momento del día.</p></div><div class="feature"><h3>🚚 Envío Rápido</h3><p>Demostración de una tienda moderna.</p></div></section>
+<section class="form-section" id="pedido"><div class="form-card"><h2>Completa tus datos</h2>
+<input placeholder="Nombre completo"><input placeholder="Correo electrónico"><input placeholder="Dirección"><input placeholder="Ciudad"><input placeholder="Código Postal"><input placeholder="Número de tarjeta"><input placeholder="Fecha de expiración"><input type="password" placeholder="CVV"><button id="pay" disabled>Pagar</button><div class="notice">Esta es una demostración. El botón de pago está deshabilitado permanentemente.</div></div></section>
+<footer>© 2025 Almond Water — Página de demostración.</footer>
+<script>function mostrarFormulario(){document.getElementById('pedido').style.display='block';window.scrollTo({top:document.getElementById('pedido').offsetTop,behavior:'smooth'});}</script>
+</body></html>
